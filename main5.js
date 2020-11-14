@@ -60,16 +60,6 @@ function scrollToSlides(linkText) {
       modalToOpenId = "#mboutique";
       break;
 
-    // case "Double Date OC":
-    //   $(".carousel").carousel(5);
-    //   modalToOpenId = "#double-date-oc";
-    //   break;
-
-    // case "The Genie's Guessing Game":
-    //   $(".carousel").carousel(6);
-    //   modalToOpenId = "#genie";
-    //   break;
-
     default:
       alert(
         "There seems to be a missing slide.  Please click on a different application link."
