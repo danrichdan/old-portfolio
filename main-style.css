@@ -1,0 +1,770 @@
+/**********************
+BASE STYLES
+**********************/
+
+body {
+    position: relative;
+    padding-top: 52px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    border-bottom: dotted 2px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+p,
+.navbar-default a.navbar-brand,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,
+.skill-icons div {
+    font-size: 1.3em;
+}
+
+.education li {
+    font-size: 1.2em;
+}
+
+h3,
+.skill-icons div,
+.modal-body p.skills-used,
+.modal-header {
+    font-weight: bold;
+}
+
+
+/**********************
+HEADER
+**********************/
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav.navbar.navbar-default {
+    margin-bottom: 0;
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
+}
+.navbar-default a.navbar-brand,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,
+.navbar-default a.navbar-brand:active,
+.navbar-default a.navbar-brand:visited,
+.banner,
+footer,
+.education {
+    /*color: rgb(192,189,163);*/
+    color: #fff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-default a.navbar-brand {
+    font-size: 2em;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    text-shadow: none;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    /*background-color: rgb(192,189,163);*/
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: rgb(146,178,201);
+}
+
+.back-to-top-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: rgba(175,22,70, .8);
+    color: white;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1005;
+    font-size: 1.5em;
+    box-shadow: 2px 3px 10px black;
+}
+
+/**********************
+BANNER SECTION
+**********************/
+
+.banner {
+    position: relative;
+    height: 100vh;
+    padding-top: 20px;
+    padding-left: 15px;
+    background: linear-gradient(0deg, rgba(255,255,255, .6) 1%, transparent),
+                rgb(8,30,45) url(images/banner-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-bottom: solid 2px;
+}
+
+.banner,
+header {
+    text-shadow: 1px 1px #fff;
+    font-variant: small-caps;
+}
+h2,
+h3,
+h4,
+.banner,
+header,
+.skill-icons div {
+    font-family: "Alegreya Sans", Consolas, Tahoma, "Trebuchet MS", Calibri, "Gill Sans", sans-serif;
+}
+
+nav.navbar.navbar-default,
+.banner,
+header,
+footer,
+.education {
+    background-color: rgb(8,30,45);
+}
+
+h1 span,
+img[src*="linked-in"],
+img[src*="github_mark"] {
+    display: block;
+}
+
+
+/**********************
+CONTENT SECTIONS
+**********************/
+
+section#about,
+section#contact,
+section#projects,
+section#skills {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 35px;
+}
+
+
+p,
+footer,
+.education li {
+    font-family: Alegreya, Calibri, "Lucida Sans Unicode",Tahoma, Verdana, "Trebuchet MS", "Gill Sans", Arial, sans-serif;
+}
+
+
+
+
+/**********************
+ABOUT
+**********************/
+
+.image-of-self {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius:50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgb(146,178,201);
+    background-blend-mode: luminosity;
+    background-image: url(images/dan_patagonia3.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin: 15px auto;
+}
+
+
+
+/**********************
+EXPERIENCE & EDUCATION
+**********************/
+
+.experience,
+.contact-methods {
+    background-color: rgb(146,178,201);
+    color: rgb(8,30,45);
+}
+
+.experience,
+.education {
+    margin-top: 25px;
+}
+
+.experience,
+.contact-methods,
+.education {
+    padding: 5px 15px 10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius: 10px;
+}
+
+
+
+/**********************
+SKILLS
+**********************/
+
+.skill-icons div,
+.skill-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-icons div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius: 50%;
+    background: radial-gradient(circle, rgb(146,178,201),rgb(8,30,45),rgb(248,194,165));
+    align-items: center;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    margin: 5px;
+}
+
+.skill-icons div:nth-of-type(9),
+.skill-icons div:nth-of-type(10),
+footer {
+    text-align: center;
+}
+
+.skill-icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.modal-body li {
+    margin-bottom: 5px;
+    font-size: 1em
+}
+
+.modal-header {
+    padding: 15px 15px 5px;
+    border-bottom: 2px dotted #e5e5e5;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.modal-body p {
+    font-size: 1.1em;
+
+}
+
+.modal-body p:first-of-type {
+    font-family: "Alegreya Sans";
+}
+
+.modal-body p span {
+    display: block;
+}
+
+/**********************
+PROJECTS
+**********************/
+
+.modal-body img,
+#projects p:first-of-type,
+h2 {
+    margin-bottom: 15px;
+}
+
+.carousel-indicators {
+    bottom: 0;
+}
+
+ol.carousel-indicators li.active {
+    background-color: rgb(175,22,70);
+}
+
+ol.carousel-indicators li {
+    border-color: rgb(175,22,70);
+}
+
+
+/**********************
+CONTACT
+**********************/
+.contact-methods {
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.contact-methods p {
+    margin-top: 10px;
+}
+
+img[src*="linked-in"],
+img[src*="github_mark"] {
+    width: 25%;
+    margin-left: 5px;
+}
+
+img[src*="linked-in"] {
+    width: 35%;
+}
+
+main a:link,
+main a:link {
+    color: rgb(175,22,70);
+}
+
+main a:visited,
+main a:visited {
+    color: rgb(40,119,175);
+}
+
+main a:active,
+main a:active {
+    color: rgb(175,161,22);
+}
+
+
+/**********************
+FOOTER
+**********************/
+footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    border-top: dotted 1px;
+    font-size: 1em;
+}
+
+
+/**********************
+MEDIA QUERIES
+**********************/
+
+@media (min-width: 360px) {
+    .banner h1 {
+        font-size: 3.5em;
+    }
+
+    h2,
+    .navbar-default a.navbar-brand{
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    footer {
+        font-size: 1.1em;
+    }
+
+    .navbar-default .navbar-nav>li>a,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a,
+    p {
+        font-size: 1.5em;
+    }
+
+    .modal-body li {
+        font-size: 1.2em;
+    }
+
+    .education li,
+    .skill-icons div,
+    .modal-header h4 {
+        font-size: 1.4em;
+    }
+
+    .modal-body p {
+        font-size: 1.3em;
+    }
+
+}
+
+@media (min-width: 412px) {
+    body {
+        position: relative;
+        padding-top: 82px;
+    }
+
+    .banner h1 {
+        font-size: 3.75em;
+    }
+
+    h3 {
+        font-size: 2.25em;
+    }
+
+    .education li {
+        font-size: 1.65em;
+    }
+
+    footer {
+        font-size: 1.35em;
+    }
+
+    .skill-icons div {
+        width: 175px;
+        height: 175px;
+        font-size: 1.7em;
+    }
+
+    .navbar-default a.navbar-brand,
+    h2 {
+        font-size: 2.75em;
+    }
+
+    .modal-body li {
+        font-size: 1.4em;
+    }
+
+    .modal-body p {
+        font-size: 1.5em;
+    }
+
+    .navbar-default .navbar-nav>li>a,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a,
+    .modal-header h4,
+    p {
+        font-size: 1.75em;
+    }
+
+    #logo {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .image-of-self {
+        width: 225px;
+        height: 225px;
+        position: static;
+        margin: 20px auto;
+    }
+    #contact .contact-methods p,
+    #contact .linkedin-git p {
+        margin-top: 20px;
+    }
+
+}
+
+
+@media (min-width: 568px) {
+    .banner {
+        background-position: center;
+    }
+
+    img[src*="github_mark"] {
+        width: 15%;
+    }
+
+    img[src*="linked-in"] {
+        width: 25%;
+    }
+}
+
+@media (min-width: 732px) {
+    img[src*="github_mark"] {
+        width: 12%;
+    }
+
+    img[src*="linked-in"] {
+        width: 18%;
+    }
+    #contact .contact-methods a,
+    #contact .linkedin-git a {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner h1 {
+        font-size: 5em;
+    }
+    .navbar-default a.navbar-brand {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 3.75em;
+        border-bottom: dotted 3px;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+
+    footer,
+    .skill-icons div,
+    .modal-body li,
+    .modal-footer button {
+        font-size: 2em;
+    }
+
+    .skill-icons div {
+        width: 225px;
+        height: 225px;
+    }
+
+    .modal-body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .modal-header h4,
+    .education li,
+    p {
+        font-size: 2.5em;
+    }
+
+    .modal-body p {
+        font-size: 2.1em;
+    }
+
+    .modal-content .modal-body {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .modal-header button,
+    h3 {
+        font-size: 3em;
+    }
+
+    .modal-footer button {
+        padding: 15px 25px;
+        border-width: 2px;
+    }
+
+    .modal-body img {
+        margin-bottom: 25px;
+    }
+
+    .image-of-self {
+        width: 300px;
+        height: 300px;
+    }
+    #wrapper {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    section#about,
+    section#contact,
+    section#projects,
+    section#skills {
+        margin-top: 45px;
+    }
+
+    .experience,
+    .education {
+        margin-top: 35px;
+    }
+
+    #projects p:first-of-type,
+    section#skills p:first-of-type {
+        margin-bottom: 20px;
+    }
+
+    .contact-methods {
+        margin-top: 25px;
+    }
+    footer {
+        margin-top: 75px;
+    }
+
+    .contact-methods,
+    .experience,
+    .education {
+        padding: 20px 30px;
+    }
+
+    ol.carousel-indicators li,
+    ol.carousel-indicators li.active {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+    }
+
+    ul.dropdown-menu {
+        background-color: rgb(8,30,45);
+    }
+
+    ul.dropdown-menu li a:hover {
+        /*background-color: rgb(192,189,163);*/
+        background-color: #fff;
+
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+        color: rgb(8,30,45);
+    }
+
+    .navbar-default .navbar-nav>li>a,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    div.item img {
+        cursor: pointer;
+    }
+
+    img[src*="github_mark"] {
+        width: 100px;
+    }
+
+    img[src*="linked-in"] {
+        width: 130px;
+    }
+
+    .experience,
+    .education,
+    .contact-methods {
+        margin-top: 50px;
+    }
+
+    section#about,
+    section#contact,
+    section#projects,
+    section#skills {
+        margin-top: 75px;
+    }
+
+    #projects p:first-of-type,
+    section#skills p:first-of-type {
+        margin-bottom: 40px;
+    }
+
+    footer {
+        margin-top: 125px;
+    }
+
+    .banner h1 {
+        text-shadow: 2px 2px 1px #000;
+    }
+
+}
+
+@media (min-width: 1349px) {
+    div.item img {
+        width: 95%;
+    }
+
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: 30px;
+    }
+
+    .banner h1 {
+        margin-left: 45px;
+    }
+
+    .container-fluid {
+        margin-right: 50px;
+    }
+
+    #wrapper {
+        width: 75%;
+    }
+
+    h1 span {
+        display: inline;
+    }
+
+    .contact-methods a {
+        display: block;
+    }
+
+    .contact-methods .call-email,
+    .image-of-self,
+    .freetime {
+        float: left;
+    }
+
+    .contact-methods .linkedin-git {
+        float: right;
+    }
+
+    #carousel-example-generic {
+        width: 90%;
+    }
+
+    div.item img,
+    #carousel-example-generic {
+        margin: 0 auto;
+    }
+
+    .carousel-control {
+        width: 0;
+    }
+    .carousel-control:link,
+    .carousel-control:visited,
+    .carousel-control:hover,
+    .carousel-control:active {
+        color: rgb(175,22,70);
+    }
+
+    .image-of-self {
+        margin-right: 5%;
+        margin-left: 10%;
+    }
+
+    .freetime {
+        width: 45%;
+        margin-bottom: 5%;
+    }
+
+    .experience {
+        clear: both;
+    }
+
+    .image-freetime-area {
+        margin: 0 auto;
+    }
+
+    .navbar-default a.navbar-brand:active, .navbar-default a.navbar-brand:hover {
+        color: rgb(8,30,45);
+    }
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+        /*background-color:rgb(192,189,163);*/
+        background-color: #fff;
+    }
+}
+
+@media (min-width: 1650px) {
+    .contact-methods {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .freetime {
+        margin-top: 4%;
+    }
+}
