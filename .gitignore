@@ -1,4 +1,5 @@
 *.pdf
 images
+img
 contact.js
 node_modules
