@@ -1,3 +1,4 @@
 *.pdf
 images
 contact.js
+node_modules

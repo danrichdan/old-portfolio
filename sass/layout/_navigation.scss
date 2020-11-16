@@ -1,0 +1,75 @@
+nav {
+  font-family: "Oswald";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    display: flex;
+  }
+  li {
+    margin-left: 5px;
+  }
+  li a {
+    padding: 5px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .top-nav {
+    @include respond(tab-land) {
+      display: none;
+    }
+  }
+
+  .hamburger {
+    @include respond(tab-land) {
+      display: block;
+      cursor: pointer;
+    }
+
+    #Menu-2:hover {
+      fill: $color-primary-light;
+    }
+
+    #Menu-2:active {
+      fill: $color-primary;
+    }
+  }
+}
+
+.nav {
+  a:link {
+    color: $color-white;
+  }
+
+  a:visited {
+    color: $color-white;
+  }
+
+  a:hover {
+    color: darken($color-white, 15%);
+  }
+
+  a:active {
+    color: lighten($color-secondary, 50%);
+  }
+}
+
+#side-nav {
+  width: 65%;
+  height: calc(100vh - 68px);
+  padding: 2rem;
+  background: $color-tertiary;
+  display: none;
+  li {
+    padding: 5px 0;
+    margin-bottom: 5px;
+  }
+}
