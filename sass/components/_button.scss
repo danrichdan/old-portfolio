@@ -1,0 +1,20 @@
+.btn {
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 5px 15px;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: lighten($color-primary, 10%);
+}
+
+.btn:active {
+  background-color: darken($color-primary, 10%);
+}
+
+.cta {
+  color: $color-black;
+  background: $color-primary;
+}

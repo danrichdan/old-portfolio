@@ -1,0 +1,116 @@
+main {
+  height: 100%;
+  margin-bottom: 4rem;
+}
+
+.section {
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.section-heading {
+  text-transform: uppercase;
+  padding: 3px 8px;
+  font-family: "Oswald", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+// HERO SECTION
+#hero-section {
+  height: calc(100vh - 68px);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-tertiary, 0.95),
+      rgba($color-tertiary, 0.95)
+    ),
+    url("../img/moth.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 68px);
+    color: $color-white;
+  }
+
+  .hero-content {
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+  }
+
+  .cta-heading {
+    font-family: "Oswald";
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .lead {
+    margin-bottom: 1.9rem;
+  }
+}
+
+// ABOUT SECTION
+#about {
+  padding-bottom: 10rem;
+  .section-heading {
+    background: $color-primary-light;
+    width: 10rem;
+  }
+  img {
+    max-width: 100%;
+    width: 10rem;
+    border-radius: 1.4rem;
+    float: left;
+    margin-right: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-summary {
+    margin-bottom: 3rem;
+    @include clearfix;
+  }
+
+  .experience {
+    width: 90%;
+  }
+
+  .container {
+    position: relative;
+  }
+  svg {
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    z-index: -1;
+  }
+}
+
+// SKILLS SECTION
+#skills {
+  .section-heading {
+    background: $color-secondary-light;
+    width: 10rem;
+  }
+}
+
+// APPLICATIONS SECTION
+#applications {
+  .section-heading {
+    background: $color-tertiary;
+    color: $color-white;
+    width: 15rem;
+  }
+}

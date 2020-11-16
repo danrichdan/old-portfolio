@@ -1,0 +1,26 @@
+footer {
+  background-color: $color-tertiary;
+  color: $color-white;
+  padding: 3rem;
+  //   border-top: 20px solid $color-secondary;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  img {
+    max-width: 100%;
+    width: 25px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social li {
+    margin-left: 10px;
+  }
+}
