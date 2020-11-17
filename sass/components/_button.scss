@@ -18,3 +18,22 @@
   color: $color-black;
   background: $color-primary;
 }
+
+.back-to-top-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: $color-tertiary;
+  color: $color-white;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1;
+  font-size: 1.5em;
+  box-shadow: 2px 3px 10px black;
+}

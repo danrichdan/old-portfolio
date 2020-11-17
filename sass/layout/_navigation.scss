@@ -18,28 +18,42 @@ nav {
     padding: 5px;
   }
 
-  .hamburger {
+  .hamburger-menu-container {
+    cursor: pointer;
     display: none;
+    @include respond(tab-land) {
+      display: block;
+    }
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: $color-white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  /* Rotate first bar */
+  .change.bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  /* Fade out the second bar */
+  .change.bar2 {
+    opacity: 0;
+  }
+  /* Rotate last bar */
+  .change.bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
   }
 
   .top-nav {
     @include respond(tab-land) {
       display: none;
-    }
-  }
-
-  .hamburger {
-    @include respond(tab-land) {
-      display: block;
-      cursor: pointer;
-    }
-
-    #Menu-2:hover {
-      fill: $color-primary-light;
-    }
-
-    #Menu-2:active {
-      fill: $color-primary;
     }
   }
 }
@@ -48,26 +62,32 @@ nav {
   a:link {
     color: $color-white;
   }
-
   a:visited {
     color: $color-white;
   }
-
   a:hover {
     color: darken($color-white, 15%);
   }
-
   a:active {
     color: lighten($color-secondary, 50%);
   }
 }
 
-#side-nav {
-  width: 65%;
-  height: calc(100vh - 68px);
-  padding: 2rem;
-  background: $color-tertiary;
+.hide-show {
   display: none;
+}
+
+.responsive {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 68px;
+  right: 0;
+  width: 100%;
+  background: $color-tertiary;
+  z-index: 1;
+  padding: 30px 0;
+  transition: 0.4s;
   li {
     padding: 5px 0;
     margin-bottom: 5px;

@@ -1,7 +1,7 @@
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 75px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   img {
     max-width: 100%;
@@ -10,6 +10,11 @@
   .card {
     width: 375px;
     border-radius: 2px;
+    margin-bottom: 25px;
+
+    @include respond(big-desktop) {
+      width: 300px;
+    }
   }
   .shadow {
     position: relative;
@@ -43,5 +48,17 @@
   .project-description,
   .tech-heading {
     margin-bottom: 10px;
+  }
+
+  a:link {
+    color: $color-tertiary;
+  }
+
+  a:visited {
+    color: $color-tertiary;
+  }
+
+  a:hover {
+    color: $color-secondary;
   }
 }
