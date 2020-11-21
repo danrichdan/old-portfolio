@@ -14,6 +14,14 @@ body {
   max-width: 1300px;
   width: 75%;
   margin: 0 auto;
+
+  @include respond(tab-port) {
+    width: 85%;
+  }
+
+  @include respond(phone) {
+    width: 90%;
+  }
 }
 
 a {

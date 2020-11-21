@@ -2,7 +2,10 @@ footer {
   background-color: $color-tertiary;
   color: $color-white;
   padding: 3rem;
-  //   border-top: 20px solid $color-secondary;
+
+  @include respond(tab-port) {
+    font-size: 0.75rem;
+  }
 
   .container {
     display: flex;

@@ -17,6 +17,14 @@ main {
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
+
+  @include respond(large-phone) {
+    margin-bottom: 4rem;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 3.5rem;
+  }
 }
 
 // HERO SECTION
@@ -44,6 +52,14 @@ main {
     text-align: center;
     position: relative;
     bottom: 3rem;
+
+    @include respond(tab-port) {
+      bottom: 5rem;
+    }
+
+    @include respond(phone) {
+      bottom: 5.5rem;
+    }
   }
 
   .cta-heading {
@@ -51,16 +67,33 @@ main {
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
 
   .lead {
     margin-bottom: 1.9rem;
+
+    @include respond(phone) {
+      font-size: 0.75rem;
+    }
   }
 }
 
 // ABOUT SECTION
 #about {
   padding-bottom: 10rem;
+
+  @include respond(tab-port) {
+    padding-bottom: 5rem;
+  }
+
+  @include respond(phone) {
+    padding-bottom: 2rem;
+  }
+
   .section-heading {
     background: $color-primary-light;
     width: 10rem;
@@ -72,10 +105,30 @@ main {
     float: left;
     margin-right: 3rem;
     margin-bottom: 1.5rem;
+    @include respond(tab-land) {
+      margin-right: 15px;
+    }
   }
 
   p {
     margin-bottom: 1.5rem;
+
+    @include respond(tab-port) {
+      font-size: 0.95rem;
+    }
+
+    @include respond(phone) {
+      font-size: 0.9rem;
+    }
+  }
+
+  .education li {
+    @include respond(phone) {
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 7px;
+    }
   }
 
   .about-summary {

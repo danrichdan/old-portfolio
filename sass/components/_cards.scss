@@ -1,21 +1,32 @@
 .cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  column-gap: 50px;
+
+  @include respond(tab-land) {
+    column-gap: 20px;
+  }
+
+  @include respond(large-phone) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(small-phone) {
+    grid-template-columns: minmax(min-content, 375px);
+  }
 
   img {
     max-width: 100%;
   }
 
   .card {
-    width: 375px;
     border-radius: 2px;
     margin-bottom: 25px;
-
-    @include respond(big-desktop) {
-      width: 300px;
-    }
+    display: grid;
+    grid-template-rows: min-content 1fr;
   }
+
   .shadow {
     position: relative;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
@@ -27,11 +38,31 @@
 
   .card-body {
     padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(4, min-content) 1fr;
+
+    @include respond(tab-land) {
+      font-size: 0.9rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 0.85rem;
+      padding: 20px 10px;
+    }
+
+    @include respond(tab-port) {
+      font-size: 0.95rem;
+      padding: 20px;
+    }
   }
 
   .card-body ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-footer {
+    align-self: end;
   }
 
   .divider {
@@ -44,21 +75,30 @@
   .site-code {
     text-align: center;
   }
+
   .project-name,
   .project-description,
   .tech-heading {
     margin-bottom: 10px;
   }
 
+  a {
+    font-weight: bold;
+  }
+
   a:link {
-    color: $color-tertiary;
+    color: $color-secondary;
   }
 
   a:visited {
-    color: $color-tertiary;
+    color: $color-secondary;
   }
 
   a:hover {
-    color: $color-secondary;
+    color: $color-secondary-light;
+  }
+
+  a:active {
+    color: $color-primary;
   }
 }

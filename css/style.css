@@ -12,6 +12,12 @@ body {
   max-width: 1300px;
   width: 75%;
   margin: 0 auto; }
+  @media only screen and (max-width: 1024px) {
+    .container {
+      width: 85%; } }
+  @media only screen and (max-width: 724px) {
+    .container {
+      width: 90%; } }
 
 a {
   text-decoration: none; }
@@ -22,6 +28,14 @@ li {
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   line-height: 1.6; }
+
+.sub-heading {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px; }
+
+.school-name {
+  color: #777; }
 
 .btn {
   text-transform: uppercase;
@@ -59,28 +73,51 @@ body {
   box-shadow: 2px 3px 10px black; }
 
 .cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  column-gap: 50px; }
+  @media only screen and (max-width: 1320px) {
+    .cards {
+      column-gap: 20px; } }
+  @media only screen and (max-width: 900px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 600px) {
+    .cards {
+      grid-template-columns: minmax(min-content, 375px); } }
   .cards img {
     max-width: 100%; }
   .cards .card {
-    width: 375px;
     border-radius: 2px;
-    margin-bottom: 25px; }
-    @media only screen and (max-width: 1700px) {
-      .cards .card {
-        width: 300px; } }
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-rows: min-content 1fr; }
   .cards .shadow {
     position: relative;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
   .cards .card-body {
-    padding: 20px; }
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(4, min-content) 1fr; }
+    @media only screen and (max-width: 1320px) {
+      .cards .card-body {
+        font-size: 0.9rem; } }
+    @media only screen and (max-width: 1024px) {
+      .cards .card-body {
+        font-size: 0.85rem;
+        padding: 20px 10px; } }
+    @media only screen and (max-width: 1024px) {
+      .cards .card-body {
+        font-size: 0.95rem;
+        padding: 20px; } }
   .cards .card-body ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
+  .cards .card-footer {
+    align-self: end; }
   .cards .divider {
     width: 100%;
     height: 5px;
@@ -92,26 +129,42 @@ body {
   .cards .project-description,
   .cards .tech-heading {
     margin-bottom: 10px; }
+  .cards a {
+    font-weight: bold; }
   .cards a:link {
-    color: #0d1b40; }
-  .cards a:visited {
-    color: #0d1b40; }
-  .cards a:hover {
     color: #1f3d8d; }
+  .cards a:visited {
+    color: #1f3d8d; }
+  .cards a:hover {
+    color: rgba(31, 61, 141, 0.51); }
+  .cards a:active {
+    color: #fcc619; }
 
 .skills-icons {
   display: grid;
   grid-template-rows: repeat(3, min-content);
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 10px;
   row-gap: 50px;
   align-items: center;
   justify-items: center; }
+  @media only screen and (max-width: 1024px) {
+    .skills-icons {
+      grid-template-columns: repeat(4, 1fr); } }
+  @media only screen and (max-width: 724px) {
+    .skills-icons {
+      grid-template-columns: repeat(3, 1fr); } }
   .skills-icons img {
     width: 100px; }
+    @media only screen and (max-width: 1024px) {
+      .skills-icons img {
+        width: 75px; } }
   .skills-icons .materialize-icon {
     border-radius: 50%;
     height: 100px; }
+    @media only screen and (max-width: 1024px) {
+      .skills-icons .materialize-icon {
+        height: 75px; } }
 
 header {
   padding: 1rem 0;
@@ -124,6 +177,9 @@ footer {
   background-color: #0d1b40;
   color: #fff;
   padding: 3rem; }
+  @media only screen and (max-width: 1024px) {
+    footer {
+      font-size: 0.75rem; } }
   footer .container {
     display: flex;
     justify-content: space-between;
@@ -158,7 +214,7 @@ nav {
   #main-nav .hamburger-menu-container {
     cursor: pointer;
     display: none; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1024px) {
       #main-nav .hamburger-menu-container {
         display: block; } }
   #main-nav .bar1,
@@ -177,7 +233,7 @@ nav {
   #main-nav .change.bar3 {
     -webkit-transform: rotate(45deg) translate(-5px, -5px);
     transform: rotate(45deg) translate(-5px, -5px); }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1024px) {
     #main-nav .top-nav {
       display: none; } }
 
@@ -227,6 +283,12 @@ main {
   display: flex;
   justify-content: center;
   margin-bottom: 5rem; }
+  @media only screen and (max-width: 900px) {
+    .section-heading {
+      margin-bottom: 4rem; } }
+  @media only screen and (max-width: 724px) {
+    .section-heading {
+      margin-bottom: 3.5rem; } }
 
 #hero-section {
   height: calc(100vh - 68px);
@@ -244,16 +306,34 @@ main {
     text-align: center;
     position: relative;
     bottom: 3rem; }
+    @media only screen and (max-width: 1024px) {
+      #hero-section .hero-content {
+        bottom: 5rem; } }
+    @media only screen and (max-width: 724px) {
+      #hero-section .hero-content {
+        bottom: 5.5rem; } }
   #hero-section .cta-heading {
     font-family: "Oswald";
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 0.5rem; }
+    @media only screen and (max-width: 724px) {
+      #hero-section .cta-heading {
+        font-size: 2rem; } }
   #hero-section .lead {
     margin-bottom: 1.9rem; }
+    @media only screen and (max-width: 724px) {
+      #hero-section .lead {
+        font-size: 0.75rem; } }
 
 #about {
   padding-bottom: 10rem; }
+  @media only screen and (max-width: 1024px) {
+    #about {
+      padding-bottom: 5rem; } }
+  @media only screen and (max-width: 724px) {
+    #about {
+      padding-bottom: 2rem; } }
   #about .section-heading {
     background: rgba(252, 198, 25, 0.52);
     width: 10rem; }
@@ -264,8 +344,23 @@ main {
     float: left;
     margin-right: 3rem;
     margin-bottom: 1.5rem; }
+    @media only screen and (max-width: 1320px) {
+      #about img {
+        margin-right: 15px; } }
   #about p {
     margin-bottom: 1.5rem; }
+    @media only screen and (max-width: 1024px) {
+      #about p {
+        font-size: 0.95rem; } }
+    @media only screen and (max-width: 724px) {
+      #about p {
+        font-size: 0.9rem; } }
+  @media only screen and (max-width: 724px) {
+    #about .education li {
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 7px; } }
   #about .about-summary {
     margin-bottom: 3rem; }
     #about .about-summary::after {

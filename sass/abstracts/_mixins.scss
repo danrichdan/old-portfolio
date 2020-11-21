@@ -7,24 +7,36 @@
 }
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
+  @if $breakpoint == small-phone {
     @media only screen and (max-width: 600px) {
       @content;
     } //600px
   }
-  @if $breakpoint == tab-port {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 724px) {
+      @content;
+    } //724px
+  }
+
+  @if $breakpoint == large-phone {
     @media only screen and (max-width: 900px) {
       @content;
     } //900px
   }
-  @if $breakpoint == tab-land {
-    @media only screen and (max-width: 1200px) {
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 1024px) {
       @content;
-    } //1200px
+    } //1024px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 1320px) {
+      @content;
+    } //1320px
   }
   @if $breakpoint == big-desktop {
     @media only screen and (max-width: 1700px) {
       @content;
-    } //1800
+    } //1700px
   }
 }
