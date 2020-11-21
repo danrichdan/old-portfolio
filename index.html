@@ -2,152 +2,81 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dan Riches | Software Engineer Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="contact.js"></script>
-    <script src="main5.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="main-style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <a href="#main-header" id="back-to-top"
-      ><div class="back-to-top-button">/\</div></a
-    >
-    <!---------BEGIN HEADER SECTION------------>
-    <header id="main-header">
-      <nav class="navbar navbar-default" id="logo">
-        <div class="container-fluid">
-          <!-- NAME AND HAMBURGER -->
-          <div class="navbar-header">
-            <button
-              type="button"
-              class="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#bs-example-navbar-collapse-1"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#main-header"> Dan Riches </a>
-          </div>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <nav id="main-nav" class="nav">
+          <h2 class="brand">Dan Riches</h2>
 
-          <!-- NAVIGATION MENU-->
-          <div
-            class="collapse navbar-collapse"
-            id="bs-example-navbar-collapse-1"
-          >
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="#about"
-                  >About Me <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li><a href="#skills">Skills</a></li>
-              <li class="dropdown">
-                <a
-                  href="#"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Applications<span class="caret"></span
-                ></a>
-                <ul class="dropdown-menu applications">
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#projects">Applications</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li>
-                    <a
-                      href="https://danrichdan.github.io/pooch_memory_match/"
-                      target="_blank"
-                      >Pooch Memory Match</a
-                    >
-                  </li>
-                  <li>
-                    <a href="http://www.tajmcgraw.com" target="_blank"
-                      >Taj McGraw Studios</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://danrichdan.github.io/student_grade_table/"
-                      target="_blank"
-                      >Student Grade Table</a
-                    >
-                  </li>
-                  <li role="separator" class="divider"></li>
-                  <li>
-                    <a href="http://www.meetup-map.com" target="_blank"
-                      >Meetup Map</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://danrichdan.github.io/mboutique_redux/"
-                      target="_blank"
-                      >M-Boutique</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#contact">Contact Me</a></li>
-            </ul>
+          <!--BEGIN HAMBURGER MENU-->
+          <div class="hamburger-menu-container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
-          <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-      </nav>
+          <!--END HAMBURGER MENU-->
+
+          <ul class="top-nav main-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#applications">Applications</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <!---------END HEADER SECTION------------>
 
-    <!---------BEGIN BANNER SECTION------------>
+    <!-- Mobile Nav-->
+    <nav id="mobile-nav" class="nav hide-show">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#applications">Applications</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
     <main>
-      <section class="banner">
-        <h1>Front-End <span>Web</span><span> Developer</span></h1>
+      <!-- Hero Section -->
+      <section id="hero-section" class="section">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="cta-heading">Quality Assurance</h1>
+            <p class="lead">QA Analyst :: Software Tester :: SDET</p>
+            <a href="#about" class="btn cta">Learn More</a>
+          </div>
+        </div>
       </section>
-      <!---------END BANNER SECTION------------>
 
-      <!---------BEGIN MAIN CONTENT SECTION------------>
-      <div id="wrapper">
-        <!-------ABOUT ME SECTION--------->
-        <section id="about" class="main-content">
-          <h2>About Me</h2>
-          <p>
-            My name is Dan Riches and I am a Software Test Engineer and Web
-            Developer located in Southern California. I write code for test
-            automation using JavaScript and Cypress, and I also develop web
-            sites and applications. I love Web Development and Test Automation
-            because there is always something to learn, and well.... it's fun
-            too.
-          </p>
-          <div class="image-freetime-area">
-            <div class="image-of-self"></div>
-            <p class="freetime">
-              When I'm not coding, automating a test, or learning something new
-              about coding or test automation then I might be found drinking
-              coffee, playing video games, cooking, or playing the guitar.
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-heading">About</h2>
+          <div class="about-summary">
+            <img
+              src="img/dan_patagonia.jpg"
+              alt="Picture of Dan in Patagonia"
+            />
+            <p>
+              My name is Dan Riches and I am a Quality Assurance professional. I
+              have over 10 years of experience in Application Development and
+              Quality Assurance. My goal is to produce high quality software
+              that functions as intended and performs well.
+            </p>
+            <p>
+              QA is my primary occupation, but I also do a little freelance web
+              design and front end development on the side. I usually have some
+              sort of project going on whether it is a personal project or a
+              professional one. So on some evenings and weekends I might be
+              working on some sort of web project.
             </p>
           </div>
           <div class="experience">
-            <h3>Experience</h3>
+            <h4 class="sub-heading">Experience</h4>
             <p>
               My past experience includes over 10 years of working in
               application development alongside developers and designers as a
@@ -155,516 +84,212 @@
               JavaScript for over 10 years and also have been involved in Test
               Automation during that time.
             </p>
-            <p>
-              To learn more about me, view my
-              <a href="dan-riches-resume-dev.pdf" target="_blank">resume</a>.
-            </p>
           </div>
           <div class="education">
-            <h3>Education</h3>
+            <h4 class="sub-heading">Education</h4>
             <ul>
-              <li>Learning Fuze - Accelerated Web Development Program</li>
-              <li>Broward College - Certificate in Web Development/Design</li>
               <li>
-                UCSD Extension - Certificate in Software Quality Assurance
+                <strong class="school-name">Learning Fuze</strong> - Accelerated
+                Web Development Program
               </li>
-              <li>San Diego State University - B.A. History</li>
+              <li>
+                <strong class="school-name">Broward College</strong> -
+                Certificate in Web Development/Design
+              </li>
+              <li>
+                <strong class="school-name">UCSD Extension</strong> -
+                Certificate in Software Quality Assurance
+              </li>
+              <li>
+                <strong class="school-name">San Diego State University</strong>
+                - B.A. History
+              </li>
             </ul>
           </div>
-        </section>
-
-        <!-------SKILLS SECTION--------->
-        <section id="skills">
-          <h2>My Skills</h2>
-          <p>
-            My current skill set includes, but is not limited to the skills
-            listed below:
-          </p>
-          <div class="skill-icons">
-            <div>HTML5</div>
-            <div>CSS3</div>
-            <div>Materialize CSS</div>
-            <div>Bootstrap</div>
-            <div>JavaScript</div>
-            <div>JQuery</div>
-            <div>Cypress</div>
-            <div>GIT</div>
-            <div>Adobe XD</div>
-          </div>
-        </section>
-
-        <!-------PROJECTS SECTION--------->
-        <section id="projects">
-          <h2>My Applications</h2>
-          <p>
-            Here are a few of the applications and websites on which I've
-            worked. Learn more about them by clicking or tapping on the image.
-          </p>
-
-          <!-------SLIDES/CAROUSEL--------->
-          <div
-            id="carousel-example-generic"
-            class="carousel slide"
-            data-ride="carousel"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="476.426"
+            height="476.426"
+            viewBox="0 0 476.426 476.426"
           >
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carousel-example-generic"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carousel-example-generic"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carousel-example-generic"
-                data-slide-to="2"
-              ></li>
-              <li
-                data-target="#carousel-example-generic"
-                data-slide-to="3"
-              ></li>
-              <li
-                data-target="#carousel-example-generic"
-                data-slide-to="4"
-              ></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img
-                  src="images/pooch_memory_match.jpg"
-                  alt="Pooch Memory Match"
-                  data-toggle="modal"
-                  data-target="#pooch-memory-match"
-                />
-              </div>
-              <div class="item">
-                <img
-                  src="images/tajmcgraw.jpg"
-                  alt="Taj McGraw Studios"
-                  data-toggle="modal"
-                  data-target="#taj"
-                />
-              </div>
-              <div class="item">
-                <img
-                  src="images/sgt.jpg"
-                  alt="Student Grade Table"
-                  data-toggle="modal"
-                  data-target="#sgt"
-                />
-              </div>
-              <div class="item">
-                <img
-                  src="images/meetup-map.jpg"
-                  alt="Meetup Map"
-                  data-toggle="modal"
-                  data-target="#meetup-map"
-                />
-              </div>
-              <div class="item">
-                <img
-                  src="images/mboutique2.jpg"
-                  alt="M-Boutique"
-                  data-toggle="modal"
-                  data-target="#mboutique"
-                />
-              </div>
-            </div>
-            <!--------END OF SLIDES------>
-
-            <!-------------BEGINNING OF MODALS---------->
-            <!-- Modal -->
-            <!--------------Pooch Memory Match Modal Begin----------->
-            <div id="pooch-memory-match" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                      &times;
-                    </button>
-                    <h4 class="modal-title">Pooch Memory Match</h4>
-                  </div>
-                  <div class="modal-body">
-                    <img
-                      src="images/pooch_memory_match.jpg"
-                      alt="Pooch Memory Match"
-                    />
-                    <p>
-                      Visit the
-                      <a
-                        href="https://danrichdan.github.io/pooch_memory_match/"
-                        target="_blank"
-                        >Live Site</a
-                      >
-                      <span>
-                        Look at the
-                        <a
-                          href="https://github.com/danrichdan/pooch_memory_match"
-                          target="_blank"
-                          >Code</a
-                        ></span
-                      >
-                    </p>
-                    <p>
-                      Pooch Memory Match is a memory match game where a player
-                      is shown the backs of 18 cards, 9 of which are matches.
-                      The player clicks on one card, is shown the front and then
-                      must click on another card in an effort to match it. The
-                      player wins when every card is matched.
-                    </p>
-                    <p>
-                      This is a project on which I worked independently. The
-                      primary technology that I focused on was JQuery since this
-                      was the quickest way to add user interactivity. The first
-                      version was prototyped with Bootstrap for the layout, but
-                      I re-did it without Bootstrap and used Flex-box properties
-                      instead.
-                    </p>
-                    <p class="skills-used">Skills used:</p>
-                    <ul>
-                      <li>JavaScript</li>
-                      <li>JQuery</li>
-                      <li>CSS</li>
-                      <li>HTML</li>
-                      <li>Adobe Illustrator</li>
-                      <li>Adobe Photoshop</li>
-                      <li>Bootstrap</li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-default"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--------------Pooch Memory Match Modal Ends----------->
-
-            <!-- Modal -->
-            <!-------Taj McGraw Studios Modal----->
-            <div id="taj" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                      &times;
-                    </button>
-                    <h4 class="modal-title">Taj McGraw Studios</h4>
-                  </div>
-                  <div class="modal-body">
-                    <img src="images/tajmcgraw.jpg" alt="Taj McGraw Studios" />
-                    <p>
-                      Visit the
-                      <a href="http://www.tajmcgraw.com" target="_blank"
-                        >Live Site</a
-                      >
-                    </p>
-                    <p>
-                      This is a professional website that I designed and built
-                      for someone who records bands part-time using primarily
-                      analog equipment. In order to build the website, I
-                      researched recording studios, interviewed the client, came
-                      up with a color palette and font choices, and built out a
-                      prototype with Bootstrap. When the client approved the
-                      basic look and feel, I created a User Flow Diagram and
-                      Wire Frame Diagrams with Adobe Illustrator. I then created
-                      web page mockups using Adobe Photoshop. The client
-                      provided me with images and then I built it from scratch
-                      using HTML, CSS, Vanilla JavaScript and JQuery
-                    </p>
-                    <p class="skills-used">Skills used:</p>
-                    <ul>
-                      <li>HTML5</li>
-                      <li>CSS3</li>
-                      <li>Adobe Photoshop</li>
-                      <li>Adobe Illustrator</li>
-                      <li>JavaScript</li>
-                      <li>JQuery</li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-default"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-------End of Taj McGraw Studios Modal------>
-
-            <!-- Modal -->
-            <!--------------Student Grade Table Modal Begin----------->
-            <div id="sgt" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                      &times;
-                    </button>
-                    <h4 class="modal-title">Student Grade Table</h4>
-                  </div>
-                  <div class="modal-body">
-                    <img src="images/sgt.jpg" alt="Student Grade Table" />
-                    <p>
-                      Visit the
-                      <a
-                        href="https://danrichdan.github.io/student_grade_table/"
-                        target="_blank"
-                        >Live Site</a
-                      >
-                      <span>
-                        Checkout the
-                        <a
-                          href="https://github.com/danrichdan/student_grade_table"
-                          target="_blank"
-                          >Code</a
-                        ></span
-                      >
-                    </p>
-                    <p>
-                      The student grade table is a table which displays the data
-                      of students. A user is able to add students, remove
-                      students, update students, and get the latest list of
-                      students upon page load or any time a student is added.
-                      The formatting and layout was done with Bootstrap and some
-                      CSS, the functions were created with JavaScript and
-                      JQuery. Originally the Create, Read, Update, Delete
-                      funcionality was done with Ajax, but the latest version
-                      uses a Firebase Database instead. I had to write and add
-                      code in order to perform these operations, some of it is
-                      specific to Firebase.
-                    </p>
-                    <p class="skills-used">Skills used:</p>
-                    <ul>
-                      <li>Bootstrap</li>
-                      <li>Firebase</li>
-                      <li>JavaScript</li>
-                      <li>JQuery</li>
-                      <li>CSS</li>
-                      <li>HTML</li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-default"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--------------Student Grade Table Modal Ends----------->
-
-            <!-- Modal -->
-            <!--------------Meetup Map Modal Begin----------->
-            <div id="meetup-map" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                      &times;
-                    </button>
-                    <h4 class="modal-title">Meetup Map</h4>
-                  </div>
-                  <div class="modal-body">
-                    <img src="images/meetup-map.jpg" alt="Meetup Map" />
-                    <p>
-                      Visit the
-                      <a href="http://www.meetup-map.com" target="_blank"
-                        >Live Site</a
-                      >
-                      <span>
-                        Look at the
-                        <a
-                          href="https://github.com/Xevnik/meetup_map"
-                          target="_blank"
-                          >Code</a
-                        ></span
-                      >
-                    </p>
-                    <p>
-                      This is a web application that I helped to develop with a
-                      team of 4 other people in a very short time. A user can
-                      enter an interest and a zip code in the form and the most
-                      relevant meetups in the nearby vicinity will display on a
-                      map. There are also cards containing the information about
-                      each meetup displayed on the left side of the screen when
-                      on desktop. If mobile, the information can be found in an
-                      "info-bubble" on the map. When the user clicks on a card
-                      then they are taken to a page with more information about
-                      that meetup and videos relevant to their interest.
-                    </p>
-                    <p>
-                      My part was to make an AJAX call to display videos on the
-                      information page. I also made some modifications to the
-                      CSS in order to display a little more user friendly on
-                      mobile devices. Plus, I used JQuery to modify the
-                      application's behavior when on a mobile device.
-                    </p>
-                    <p class="skills-used">Skills used:</p>
-                    <ul>
-                      <li>JavaScript</li>
-                      <li>JQuery/AJAX</li>
-                      <li>CSS</li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-default"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--------------Meetup Map Modal Ends----------->
-
-            <!-- Modal -->
-            <!--------------MBoutique Modal Begin----------->
-            <div id="mboutique" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                      &times;
-                    </button>
-                    <h4 class="modal-title">MBoutique</h4>
-                  </div>
-                  <div class="modal-body">
-                    <img src="images/mboutique2.jpg" alt="MBoutique Macarons" />
-                    <p>
-                      Visit the
-                      <a
-                        href="https://danrichdan.github.io/mboutique_redux/"
-                        target="_blank"
-                        >Live Site</a
-                      >
-                      <span>
-                        Look at the
-                        <a
-                          href="https://github.com/danrichdan/mboutique_redux"
-                          target="_blank"
-                          >Code</a
-                        ></span
-                      >
-                    </p>
-                    <p>
-                      This is a site that I created using HTML for the content,
-                      CSS for styling, and I later used AngularJS for url
-                      routing. The content as well as page mockups were
-                      provided. The mobile version only had mockups for two
-                      pages and there were no mockups for the tablet version so
-                      I had to use my own best judgement for those.
-                    </p>
-                    <p class="skills-used">Skills used:</p>
-                    <ul>
-                      <li>HTML5</li>
-                      <li>CSS3</li>
-                      <li>AngularJS</li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-default"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--------------MBoutique Modal Ends----------->
-
-            <!-- CAROUSEL CONTROLS-->
-            <a
-              class="left carousel-control"
-              href="#carousel-example-generic"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="glyphicon glyphicon-chevron-left"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="right carousel-control"
-              href="#carousel-example-generic"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="glyphicon glyphicon-chevron-right"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </section>
-
-        <!-------CONTACT SECTION--------->
-        <section id="contact">
-          <h2>Contact Me</h2>
-          <p>
-            Put my skills to use for you. Feel free to contact me via any of the
-            following methods.
-          </p>
-          <div class="contact-methods clearfix">
-            <div class="call-email">
-              <p>Send me an email at:</p>
-              <!--<p>Call me: </p>-->
-              <p>
-                Or view my
-                <a href="dan-riches-resume-dev.pdf" target="_blank">resume</a>
-              </p>
-            </div>
-            <div class="linkedin-git">
-              <p>Check out my profile on LinkedIn.</p>
-              <a
-                href="https://www.linkedin.com/in/dan-riches-5237138"
-                target="_blank"
+            <defs>
+              <linearGradient
+                id="linear-gradient"
+                x1="0.852"
+                y1="0.858"
+                x2="0.168"
+                y2="0.267"
+                gradientUnits="objectBoundingBox"
               >
-                <img src="images/dev_icons/linked-in.png" alt="LinkedIn logo" />
-              </a>
-              <p>Look at my code on GitHub</p>
-              <a href="https://github.com/danrichdan" target="_blank">
-                <img src="images/dev_icons/github_mark.png" alt="GitHub Mark" />
-              </a>
+                <stop offset="0" stop-color="#fcc619" />
+                <stop offset="1" stop-color="#fff" />
+              </linearGradient>
+            </defs>
+            <circle
+              id="Ellipse_18"
+              data-name="Ellipse 18"
+              cx="194.5"
+              cy="194.5"
+              r="194.5"
+              transform="translate(476.426 100.681) rotate(105)"
+              fill="url(#linear-gradient)"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-heading">Skills</h2>
+          <div class="skills-icons">
+            <img src="img/skills/html.png" alt="HTML Icon" />
+            <img src="img/skills/css.png" alt="CSS Icon" />
+            <img src="img/skills/sass.png" alt="Sass Icon" />
+            <img src="img/skills/javascript.png" alt="JavaScript Icon" />
+            <img src="img/skills/jquery.png" alt="JQuery Icon" />
+            <img src="img/skills/nodejs.png" alt="NodeJS Icon" />
+            <img src="img/skills/bootstrap.png" alt="Bootstrap Icon" />
+            <img
+              class="materialize-icon"
+              src="img/skills/materialize.png"
+              alt="Materialize Icon"
+            />
+            <img src="img/skills/cypress.png" alt="Cypress Icon" />
+            <img src="img/skills/bitbucket.png" alt="Bitbucket Icon" />
+            <img src="img/skills/sourcetree.png" alt="SourceTree Icon" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Applications Section -->
+      <section class="section" id="applications">
+        <div class="container">
+          <h2 class="section-heading">Applications</h2>
+          <div class="cards">
+            <!-- Card -->
+            <div class="card shadow">
+              <img
+                src="img/applications/tajmcgraw.jpg"
+                alt="Image of Taj Mcgraw Home Page"
+              />
+              <div class="card-body">
+                <h4 class="project-name">Taj Mcgraw</h4>
+                <p class="project-description">
+                  Taj McGraw is a recording studio in Seattle which records
+                  local bands with Analog equipment. The owner required a
+                  brochure website.
+                </p>
+                <h5 class="tech-heading">Technologies Used</h5>
+                <ul class="tech-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Photoshop</li>
+                  <li>Illustrator</li>
+                </ul>
+                <div class="card-footer">
+                  <div class="divider"></div>
+                  <ul class="site-code">
+                    <li><a href="#">Live Site</a></li>
+                    <li><a href="#">Code</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card shadow">
+              <img
+                src="img/applications/pooch_memory_match.jpg"
+                alt="Image of Pooch Memory Match Home Page"
+              />
+              <div class="card-body">
+                <h4 class="project-name">Pooch Memory Match</h4>
+                <p class="project-description">
+                  This is a memory match game where the player must match pairs
+                  of pictures of different dogs they are shown.
+                </p>
+                <h5 class="tech-heading">Technologies Used</h5>
+                <ul class="tech-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>JQuery</li>
+                  <li>Photoshop</li>
+                  <li>Illustrator</li>
+                </ul>
+                <div class="card-footer">
+                  <div class="divider"></div>
+                  <ul class="site-code">
+                    <li><a href="#">Live Site</a></li>
+                    <li><a href="#">Code</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card shadow">
+              <img
+                src="img/applications/sgt.jpg"
+                alt="Image of Student Grade Table Home Page"
+              />
+              <div class="card-body">
+                <h4 class="project-name">Student Grade Table</h4>
+                <p class="project-description">
+                  This is a CRUD application, where the user can Create, Read,
+                  Update, Delete student grades. It also calculates the average
+                  grade.
+                </p>
+                <h5 class="tech-heading">Technologies Used</h5>
+                <ul class="tech-list">
+                  <li>HTML</li>
+                  <li>Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>JQuery</li>
+                </ul>
+                <div class="card-footer">
+                  <div class="divider"></div>
+                  <ul class="site-code">
+                    <li><a href="#">Live Site</a></li>
+                    <li><a href="#">Code</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
-    <!---------END MAIN CONTENT SECTION------------>
 
-    <footer id="footer">&copy;2018 Dan Riches</footer>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#applications">Applications</a></li>
+        </ul>
+        <span>&copy;2020 Dan Riches</span>
+        <ul class="social">
+          <li>
+            <a href="https://github.com/danrichdan"
+              ><img src="img/social/010-github.png" alt="GitHub"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/social/linkedin.png" alt="LinkedIn" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!--BACK TO TOP BUTTON-->
+    <a href="#main-header" id="back-to-top"
+      ><div class="back-to-top-button">/\</div></a
+    >
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
