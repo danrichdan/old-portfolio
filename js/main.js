@@ -1,5 +1,6 @@
 $(document).ready(function () {
   applyClickHandlers();
+  insertCurrentYear(".copyright-year");
 });
 
 function applyClickHandlers() {
@@ -88,4 +89,11 @@ function backToTop() {
     );
     $("#back-to-top").hide();
   });
+}
+
+// Adds Current Year to Page Element -- Used in Copyright
+function insertCurrentYear(selector) {
+  let date = new Date();
+  date = date.getFullYear();
+  $(selector).text(date);
 }
