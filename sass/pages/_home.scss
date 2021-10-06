@@ -167,3 +167,51 @@ main {
     width: 15rem;
   }
 }
+
+// CONTACT SECTION
+#contact {
+  .section-heading {
+    background: $color-primary-light;
+    color: $color-black;
+    width: 10rem;
+  }
+  .contact-info-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+
+    @include respond(phone) {
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column-reverse;
+
+      margin-bottom: 7px;
+    }
+  }
+  .form-area p {
+    margin-bottom: 1rem;
+  }
+
+  article {
+    margin-bottom: 1rem;
+    a {
+      font-weight: bold;
+    }
+
+    a:link {
+      color: $color-secondary;
+    }
+
+    a:visited {
+      color: $color-secondary;
+    }
+
+    a:hover {
+      color: $color-secondary-light;
+    }
+
+    a:active {
+      color: $color-primary;
+    }
+  }
+}

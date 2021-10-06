@@ -40,7 +40,9 @@ li {
   border-radius: 2px;
   padding: 5px 15px;
   font-family: "Oswald";
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer;
+  border: none; }
 
 .btn:hover {
   background-color: #fdd24b; }
@@ -137,6 +139,15 @@ li {
     color: rgba(31, 61, 141, 0.51); }
   .cards a:active {
     color: #fcc619; }
+
+.contact-form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem; }
+
+.contact-form input,
+.contact-form textarea {
+  padding: 5px; }
 
 .skills-icons {
   display: grid;
@@ -383,3 +394,35 @@ main {
   background: #0d1b40;
   color: #fff;
   width: 15rem; }
+
+#contact .section-heading {
+  background: rgba(252, 198, 25, 0.52);
+  color: #000;
+  width: 10rem; }
+
+#contact .contact-info-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px; }
+  @media only screen and (max-width: 724px) {
+    #contact .contact-info-area {
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 7px; } }
+
+#contact .form-area p {
+  margin-bottom: 1rem; }
+
+#contact article {
+  margin-bottom: 1rem; }
+  #contact article a {
+    font-weight: bold; }
+  #contact article a:link {
+    color: #1f3d8d; }
+  #contact article a:visited {
+    color: #1f3d8d; }
+  #contact article a:hover {
+    color: rgba(31, 61, 141, 0.51); }
+  #contact article a:active {
+    color: #fcc619; }
