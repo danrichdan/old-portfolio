@@ -1,0 +1,26 @@
+#thanks {
+  height: calc(100vh - 70.391px);
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+
+  .thanks-msg {
+    text-align: center;
+    position: relative;
+    top: 25%;
+  }
+
+  h2 {
+    font-family: "Oswald", "Franklin Gothic Medium", "Arial Narrow", Arial,
+      sans-serif;
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+
+  .btn {
+    padding: 10px 25px;
+  }
+}
