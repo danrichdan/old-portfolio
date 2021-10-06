@@ -149,6 +149,9 @@ li {
 .contact-form textarea {
   padding: 5px; }
 
+.contact-form .btn {
+  padding: 5px 25px; }
+
 .skills-icons {
   display: grid;
   grid-template-rows: repeat(3, min-content);
