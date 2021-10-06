@@ -29,38 +29,42 @@ function closeNavDropDown() {
 
 function linkBehavior() {
   //MAIN SECTION LINKS
-  $('a[href="#about"], a[href="#skills"], a[href="#applications"]').click(
-    function (event) {
-      event.preventDefault();
+  $(
+    'a[href="#about"], a[href="#skills"], a[href="#applications"], a[href="#contact"]'
+  ).click(function (event) {
+    event.preventDefault();
 
-      var $headerLink = $(this).attr("href");
-      var sectionId;
+    var $headerLink = $(this).attr("href");
+    var sectionId;
 
-      switch ($headerLink) {
-        case "#about":
-          sectionId = "#about";
-          break;
+    switch ($headerLink) {
+      case "#about":
+        sectionId = "#about";
+        break;
 
-        case "#skills":
-          sectionId = "#skills";
-          break;
+      case "#skills":
+        sectionId = "#skills";
+        break;
 
-        case "#applications":
-          sectionId = "#applications";
-          break;
+      case "#applications":
+        sectionId = "#applications";
+        break;
 
-        default:
-          alert("There is an error, please refresh the page");
-      }
-      $("html, body").animate(
-        {
-          scrollTop: $(sectionId).offset().top,
-        },
-        1500
-      );
-      closeNavDropDown();
+      case "#contact":
+        sectionId = "#contact";
+        break;
+
+      default:
+        alert("There is an error, please refresh the page");
     }
-  );
+    $("html, body").animate(
+      {
+        scrollTop: $(sectionId).offset().top,
+      },
+      1500
+    );
+    closeNavDropDown();
+  });
 }
 //DISPLAY BACK TO TOP BUTTON
 function animateToTopButton() {
