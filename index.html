@@ -314,7 +314,7 @@
             <div class="form-area">
               <p>Interested in working together, please 
                 feel free to get in touch.</p>
-              <form method="POST" name="contact" class="contact-form" data-netlify="true">
+              <form action="/confirm.html" method="POST" name="contact" class="contact-form" data-netlify="true">
                 <div class="field">
                   <label for="name">Name</label>
                   <input type="text" id="name" name="name" placeholder="Name" required>
@@ -325,7 +325,7 @@
                 </div>
                 <div class="field">
                   <label for="comments">Comments</label>
-                  <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                  <textarea name="comments" id="comments" cols="30" rows="10" required></textarea>
                 </div>
                 <button class="btn cta">Submit</button>
               </form>
